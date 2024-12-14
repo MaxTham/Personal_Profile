@@ -36,7 +36,9 @@ const Projects = () => {
               className="w-full max-w-xl lg:w3/4"
             >
               <h6 className="mb-2 font-semibold">{projects.title}</h6>
-              <p className="mb-4 text-neutral-400">{projects.description}</p>
+              <p className="mb-4 text-neutral-400 text-justify">
+                {projects.description}
+              </p>
               {projects.technologies.map((tech, index) => (
                 <span
                   key={index}
